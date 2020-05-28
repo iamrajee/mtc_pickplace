@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- moveit_task_constructor_demo -->
+  <node name="moveit_task_constructor_demo2" pkg="mtc_pickplace" type="moveit_task_constructor_demo2" output="screen">
+    <param name="execute" value="true" />
+    <rosparam command="load" file="$(find mtc_pickplace)/config/panda_config2.yaml" />
+  </node>
+
+</launch>
