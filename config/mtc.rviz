@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Status1
         - /PlanningScene1/Scene Robot1
+        - /Motion Planning Tasks1
         - /TF1/Frames1
       Splitter Ratio: 0.570588231086731
     Tree Height: 789
@@ -31,10 +32,7 @@ Panels:
       solutions_splitter:
         - 443
         - 70
-      solutions_view_columns:
-        - 57
-        - 0
-        - 0
+      solutions_view_columns: ~
       tasks_view_columns:
         - 327
         - 57
@@ -82,6 +80,83 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        j2s6s300_end_effector:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        j2s6s300_link_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_finger_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_finger_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_finger_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_finger_tip_1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_finger_tip_2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        j2s6s300_link_finger_tip_3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        root:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Loop Animation: false
       Name: Trajectory
       Robot Alpha: 0.5
@@ -203,10 +278,6 @@ Visualization Manager:
       Markers:
         All at once?: false
         Value: true
-        approach_object: true
-        lift_object: true
-        lower_object: true
-        retreat: true
       Name: Motion Planning Tasks
       Robot:
         Fixed Robot Color: 150; 50; 150
@@ -308,7 +379,7 @@ Visualization Manager:
         Voxel Rendering: Occupied Voxels
       Show Trail: false
       State Display Time: REALTIME
-      Task Solution Topic: /main_node/solution
+      Task Solution Topic: /main/solution
       Tasks:
         pick_place_task: 10
       Trail Step Size: 1
@@ -435,7 +506,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 7.563344955444336
+      Distance: 4.535702705383301
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -450,10 +521,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.3797965049743652
+      Pitch: 0.8597970008850098
       Target Frame: panda_link0
       Value: XYOrbit (rviz)
-      Yaw: 3.054938316345215
+      Yaw: 2.219935417175293
     Saved: ~
 Window Geometry:
   Displays:

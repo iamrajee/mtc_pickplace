@@ -24,7 +24,8 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
 
   <!-- =============== Load ExecuteTaskSolutionCapability to execute found solutions in simulation =============== -->
-  <param name="move_group/capabilities" value="move_group/ExecuteTaskSolutionCapability" />
+  <!-- <param name="move_group/capabilities" value="move_group/ExecuteTaskSolutionCapability" />
+  <param name="capabilities" value="move_group/ExecuteTaskSolutionCapability" /> -->
   
   <!-- =============== move_group =============== -->
   <include file="$(find j2s6s300_moveit_config)/launch/move_group.launch">
@@ -32,6 +33,7 @@
     <arg name="fake_execution" value="true"/>
     <arg name="info" value="true"/>
     <arg name="debug" value="false"/>
+    <arg name="capabilities" value="move_group/ExecuteTaskSolutionCapability" />
   </include>
 
   <!-- =================== Rviz ================= -->

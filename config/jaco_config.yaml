@@ -1,3 +1,7 @@
+# execute: true
+# main/execute: true
+# /main/execute: true
+
 # Total planning attempts
 planning_attempts: 10
 
@@ -57,7 +61,8 @@ grasp_frame_transform: [0, 0.0, 0.0, 3.14, 0.0, 0]
 # Place pose [x,y,z,r,p,y]
 # place_pose: [0.4, 0.25, 0, 0, 0, 1.57]
 # place_pose: [0.5, -0.25, 0.02, 1.571,-1.571,0]
-place_pose: [0.0, 0.5, 0.202, 0,0,0]
+# place_pose: [0.0, 0.5, 0.202, 0,0,0] #demo
+place_pose: [0.4, 0.0, 0.402, 0,0,0] #easy test
 place_surface_offset: 0.0001 # place offset from table
 
 # Valid distance range when approaching an object for picking
@@ -73,11 +78,12 @@ mesh_name  : "screwdriver"
 mesh_reference_frame : "world_new"
 mesh_dimensions : [0.202, 0.03] #h,r
 # mesh_pose : [0.5, -0.25, 0.02, 1.571,0,0] #x,y,z,r,p,y
-mesh_pose : [0.5, 0, 0.202, 0, 0, 0] #x,y,z,r,p,y
+# mesh_pose : [0.5, 0, 0.202, 0, 0, 0] #x,y,z,r,p,y #demo
+mesh_pose : [0.5, 0, 0.402, 0, 0, 0] #x,y,z,r,p,y #easy test
 mesh_file  : "package://mtc_pickplace/meshes/screwdriver.stl"
 
 
 table2_name: "table2"
 table2_dimensions: [0.5, 0.05, 0.5]  # [length, width, height]
-table2_pose: [0.5, 0, 0.25, 0, 0, 0]
+table2_pose: [0.5, 0, 0.25, 0, 0, 0] 
 # surface2_link: "{{ table2_name }}"

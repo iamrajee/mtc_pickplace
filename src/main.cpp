@@ -240,12 +240,12 @@ int main(int argc, char** argv) {
 	pick_place_task.init();
 	if (pick_place_task.plan()) {
 		ROS_INFO_NAMED(LOGNAME, "Planning succeded");
-		if (pnh.param("execute", false)) {
+		// if (pnh.param("/main/execute", false)) {
 			pick_place_task.execute();
 			ROS_INFO_NAMED(LOGNAME, "Execution complete");                     //<=== pull request
-		} else {
-			ROS_INFO_NAMED(LOGNAME, "Execution disabled");
-		}
+		// } else {
+		// 	ROS_INFO_NAMED(LOGNAME, "Execution disabled");
+		// }
 	} else {
 		ROS_INFO_NAMED(LOGNAME, "Planning failed");
 	}
